@@ -1,18 +1,18 @@
-.section_container{
- 
+.section_container {
+
     background: var(--gray-600);
     min-height: calc(100vh - 200px);
     height: auto;
     display: flex;
     align-items: flex-start;
-    justify-content: center ;
+    justify-content: center;
 
     padding-bottom: 50px;
 
 }
 
 
-.input_container{
+.input_container {
     display: flex;
     gap: 8px;
 
@@ -20,7 +20,7 @@
 
 }
 
-.input{
+.input {
     width: 648px;
     height: 54px;
 
@@ -34,17 +34,19 @@
 
 }
 
-.input:focus{
+.input:focus {
     filter: brightness(1.25);
 }
-.input:hover{
+
+.input:hover {
     filter: brightness(1.25);
 }
-.input:focus-visible{
+
+.input:focus-visible {
     outline: 2px solid var(--purple-dark);
 }
 
-.button{
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,38 +62,38 @@
     transition: 0.5s;
 }
 
-.button:hover{
+.button:hover {
     filter: brightness(1.25);
 }
 
-.button:disabled{
+.button:disabled {
     filter: grayscale(100%);
     cursor: not-allowed;
 }
 
-.contend_header{
+.contend_header {
     display: flex;
     justify-content: space-between;
     color: aliceblue;
-    
+
     margin: 64px 0 24px;
 }
 
-.tasks_container{
+.tasks_container {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 
-.task_created{
+.task_created {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: var(--blue);
 }
 
-.task_done{
+.task_done {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -99,7 +101,7 @@
 
 }
 
-.span_value{
+.span_value {
     padding: 2px 8px;
     gap: 10px;
     color: var(--gray-200);
@@ -114,5 +116,46 @@
 
 
 input[type="checkbox"]:hover {
-        filter: brightness(1.25);
+    filter: brightness(1.25);
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1007px) {
+    .input {
+        width: 427px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .input {
+        width: 198px;
+        height: 44px;
+    }
+
+    .task_created {
+        font-size: 10px;
+    }
+
+    .task_done {
+        font-size: 10px;
+    }
+
+    .span_value {
+        font-size: 10px;
+    }
+
+    .button {
+        height: 44px;
+    }
+
+
+
+
+
+
 }
