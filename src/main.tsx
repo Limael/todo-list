@@ -10,7 +10,7 @@ import { LandingPage } from './components/LandingPage/index.tsx';
 
 const router = createBrowserRouter([
   {
-    path: "/to-do",
+    path: "to-do",
     element: <App />,
   },
   {
