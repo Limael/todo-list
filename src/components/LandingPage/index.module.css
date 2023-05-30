@@ -1,0 +1,47 @@
+.section_container {
+    background: #1E6F9F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_container {
+    display: flex;
+    width: 74%;
+}
+
+.title {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 144px;
+    color: #FFFFFF;
+}
+
+.img_landing {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+
+
+    img {
+        width: 90%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+    .title {
+        font-size: 70px;
+    }
+
+    img {
+        width: 90%;
+    }
+}
